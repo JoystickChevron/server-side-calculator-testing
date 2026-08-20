@@ -1,0 +1,25 @@
+{
+  "name": "playwright-playground",
+  "version": "1.0.0",
+  "description": "project for automation practice",
+  "keywords": [
+    "playwright",
+    "test",
+    "automation"
+  ],
+  "homepage": "https://github.com/JoystickChevron/playwright-playground#readme",
+  "bugs": {
+    "url": "https://github.com/JoystickChevron/playwright-playground/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoystickChevron/playwright-playground.git"
+  },
+  "license": "ISC",
+  "author": "patrick c",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  }
+}
