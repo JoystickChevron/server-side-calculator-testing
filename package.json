@@ -21,7 +21,10 @@
   "main": "index.js",
   "scripts": {
     "test": "test",
-    "prepare": "husky"
+    "prepare": "husky",
+    "lint": "eslint .",
+    "format:check": "prettier --check .",
+    "format:fix": "prettier --write ."
   },
   "dependencies": {
     "@playwright/test": "^1.62.1",
@@ -35,7 +38,7 @@
     "prettier": "^3.9.6"
   },
   "lint-staged": {
-    "*.{js,ts,jsx,tsx}": "eslint",
-    "*.{json,md,css}": "prettier --check"
+    "*.{js,ts,jsx,tsx}": "eslint --fix",
+    "*.{json,md,css}": "prettier --write"
   }
 }
