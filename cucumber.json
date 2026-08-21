@@ -1,0 +1,12 @@
+{
+  "default": {
+    "paths": ["tests/features/**/*.feature"],
+    "import": ["src/config/cucumber.conf.js", "tests/step-definitions/**/*.js"],
+    "format": ["pretty", "json:src/reporters/cucumber-report.json"],
+    "parallel": 1,
+    "dryRun": false,
+    "retry": 0,
+    "strict": true,
+    "worldParameters": {}
+  }
+}
