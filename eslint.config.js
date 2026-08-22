@@ -14,6 +14,5 @@ module.exports = [
     },
   },
 
-  // 3. Prettier Formatting Integration
   eslintPluginPrettierRecommended,
 ];
