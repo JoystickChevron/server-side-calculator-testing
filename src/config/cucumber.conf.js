@@ -13,11 +13,11 @@ Before(async function () {
 });
 
 After(async function ({ status }) {
-  if (status !== "passed" && this.page) {
-    await this.page.screenshot({
-      path: `src/reporters/screenshot-${Date.now()}.png`,
-    });
-  }
+  const screenshotBuffer = await this.page.screenshot({
+    path: `src/reporters/screenshot-${Date.now()}.png`,
+    fullPage: true,
+  });
+  this.attach(screenshotBuffer, "image/png");
   await this.browserContext?.close();
   await this.browser?.close();
 });
