@@ -4,7 +4,7 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit"
   },
-  "cucumber.glue": ["tests/step-definitions/**/*.js"],
+  "cucumber.glue": ["tests/stepDefinitions/**/*.js"],
   "cucumber.features": ["tests/features/**/*.feature"],
   "[cucumber]": {
     "editor.defaultFormatter": "CucumberOpen.cucumber-official",

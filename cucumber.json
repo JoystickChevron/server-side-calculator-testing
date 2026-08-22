@@ -1,7 +1,7 @@
 {
   "default": {
     "paths": ["tests/features/**/*.feature"],
-    "import": ["src/config/cucumber.conf.js", "tests/step-definitions/**/*.js"],
+    "import": ["src/config/cucumber.conf.js", "tests/stepDefinitions/*.js"],
     "format": ["pretty", "json:src/reporters/cucumber-report.json"],
     "parallel": 1,
     "dryRun": false,
