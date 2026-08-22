@@ -3,5 +3,7 @@
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit"
-  }
+  },
+  "cucumber.glue": ["tests/step-definitions/**/*.js"],
+  "cucumber.features": ["tests/features/**/*.feature"]
 }
