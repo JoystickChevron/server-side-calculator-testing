@@ -14,7 +14,8 @@ class ServerSideCalculatorPageObjects {
 
   async navigateToServerSideCalculatorPage() {
     await this.page.goto(
-      "https://testpages.eviltester.com/apps/server-side-calculator/",
+      process.env.BASE_URL ||
+        "https://testpages.eviltester.com/apps/server-side-calculator/",
     );
     await expect(this.header).toBeVisible({
       timeout: DEFAULT_TIMEOUT,

@@ -1,7 +1,8 @@
 const { Before, After } = require("@cucumber/cucumber");
 const { chromium } = require("playwright");
 const pageConfig = require("../pages/pages.config");
-
+const dotenv = require("dotenv");
+dotenv.config();
 Before(async function () {
   this.browser = await chromium.launch({
     headless: false,
