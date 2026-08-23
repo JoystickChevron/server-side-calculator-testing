@@ -21,8 +21,8 @@ Feature: Server Side Calculator
 
     Examples:
       | operator | firstNumber | secondNumber | expectedAnswer |
-      | plus     |          10 |           10 |             20 |
-      | times    |          10 | ten          |            100 |
+      | plus     |          10 |          -10 |              0 |
+      | times    |        10.5 | ten          |            105 |
       | minus    | ten         |           10 |              0 |
       | divide   | ten         | ten          |              1 |
 
